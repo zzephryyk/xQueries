@@ -11,6 +11,7 @@ class QueryBuilder:
     def select(self, *fields):
         self.selectFields.extend(fields)
         return self
+
     def where(self, field, operator, value):
         self.conditions.append((field, operator, value))
         return self
